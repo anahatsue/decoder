@@ -1,0 +1,211 @@
+body[data-theme="light"]{
+    --color-1:white;
+    --color-2: #0A3871;
+    --color-3: black;
+    --font: 
+}
+
+body[data-theme="dark"]{
+    --color-1:black;
+    --color-2: lime;
+    --color-3: white;
+    --font: font-family: 'Orbitron', sans-serif;
+}
+
+
+/* CSS do Header */
+
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.vector-a {
+    margin: -30px 0px 0px 40px;
+    float: left;
+}
+
+nav {
+    position:absolute;
+    top: 0px;
+    right: 0px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+nav li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#light-mode {
+    color: #E5E5E5;
+}
+
+#dark-mode {
+    color: lime;
+}
+
+/* CSS da página */
+
+body {
+    background: black;
+    color: white;
+}
+
+#page {
+    display: flex;
+    flex-flow:row;
+    align-items: center;
+    margin: 80px 100px 0 100px;
+}
+
+#dot {
+    color: lime;
+}
+
+
+#input-box {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#text {
+    font-size: 32px;
+    border: none;
+    resize: none;
+    width: 65vw;
+    height: 50vh;
+    margin-top: 80px;
+}
+
+#text:focus {
+    box-shadow: 0 0 0 0;
+    border: none;
+    outline: 0;
+}
+
+.text-light {
+    background-color: white;
+    color: #0A3871;
+}
+
+.text-dark {
+    background-color: black;
+    color: lime;
+}
+
+#warning {
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+#warning-img {
+    height: 15px;
+}
+
+#warning-msg {
+    font-size: 10px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cript, #uncript {
+    width: 48%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#cript {
+    background-color: lime;
+    border: 2px solid lime;
+}
+
+#uncript {
+    background-color: black;
+    border: 2px solid lime;
+    color: white;
+}
+
+#output-box {
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px lime;
+    height: 75vh;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+#output-msg-default {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#output-msg-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+#output-msg {
+    font-size: 14px;
+    text-align: center;
+}
+
+#img-output {
+    width: 200px;
+}
+
+#output-done {
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+#coded-message{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    max-height: 90%;
+    word-break: break-word;
+    overflow-y: scroll;
+    word-wrap:break-word;
+    overflow-x: hidden;
+}
+
+#button-coded-message {
+    display: none;
+    padding: 5%;
+    justify-content: center;
+}
+
+#btn-copy-message {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    border: 2px solid lime;
+    color: white;
+
+}
+
