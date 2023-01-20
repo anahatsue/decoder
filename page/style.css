@@ -9,6 +9,7 @@ body[data-theme="light"]{
     --image-msg: url("../images/msg-light.svg");
     --image-warning: url("../images/warning-light.png");
     --image-logo: url("../images/logo-light.png");
+    --image-bulb: url("../images/bulb-dark.jpg");
 }
 
 body[data-theme="dark"]{
@@ -22,6 +23,7 @@ body[data-theme="dark"]{
     --image-msg: url("../images/msg-dark.gif");
     --image-warning: url("../images/warning-dark.png");
     --image-logo: url("../images/logo-dark.svg");
+    --image-bulb: url("../images/bulb-light.jpg");
 }
 
 
@@ -30,7 +32,7 @@ body[data-theme="dark"]{
     float: left;
     content:var(--image-logo);
     width: 100px;
-    height: 60px;
+    height: 50px;
 }
 
 nav {
@@ -50,10 +52,18 @@ nav li button {
     cursor: pointer;
 }
 
-#switch-mode {
+/* #switch-mode {
     color: var(--color-2);
     font-family: var(--font);
     font-size: 16px;
+} */
+
+#img-bulb {
+    content: var(--image-bulb);
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 /* CSS da página */
@@ -152,6 +162,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 10px;
     color: var(--color-3);
 }

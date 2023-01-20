@@ -100,12 +100,8 @@ switchMode.addEventListener("click", (event) => {
     var attributeTheme = document.body.getAttribute("data-theme");
         if(attributeTheme == "light") {
             document.body.setAttribute("data-theme", "dark");
-            switchMode.innerHTML = "";
-            switchMode.innerHTML = "Tema Nuvem"
         } else if (attributeTheme == "dark") {
             document.body.setAttribute("data-theme", "light");
-            switchMode.innerHTML = "";
-            switchMode.innerHTML = "Tema Hacker"
         }
 })
 
