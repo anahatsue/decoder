@@ -8,19 +8,20 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet"> 
         <script src="script.js" defer></script>
-        <link rel="icon" href="/images/alien.jpg">
     </head>
 
-    <body>
+    <body data-theme="light">
         <header>
-            <div class="vector-a">
-                <a href="https://www.alura.com.br/"><img src="..\images\alura-logo.svg" alt="logo alura"></a>
+            <div>
+                <a href="https://www.alura.com.br/"><img src="" alt="logo alura" class="img-logo"></a>
             </div>
             <nav id="colors">
                 <ul>
-                    <li><button id="light-mode">Light Mode</button></li>
-                    <li><button id="dark-mode">Dark Mode</button></li>
+                    <li><button id="switch-mode">Tema Hacker</button></li>
                 </ul>
             </nav>
         </header>
@@ -30,11 +31,11 @@
                 <div id="input-box">
                     <section class="caixa-de-texto">
                         <form>
-                            <textarea id="text" autofocus placeholder="Digite seu texto"></textarea>
+                            <textarea id="text" autofocus required placeholder="Digite seu texto"></textarea>
                         
                             <div id="warning"> 
-                                <img id="warning-img" src="..\images\Frame 1.png">
-                                <h1 id="warning-msg">Apenas letras minúsculas e sem acento<span id="dot">.</span></h1>
+                                <img id="warning-img" src="">
+                                <h1 id="warning-msg">Apenas letras minúsculas e sem acento.</h1>
                             </div>
 
                             <div class="buttons">
@@ -47,9 +48,9 @@
                 <div id="output-box">
                     <section id="output-default">
                         <div id="output-msg-default">
-                            <img src="..\images\Space_Invader.gif" id="img-output">
-                            <h1 id="output-msg-title">Nenhuma mensagem encontrada<span id="dot">.</span></h1>
-                            <h3 id="output-msg">Digite um texto que você deseja criptografar ou descriptografar<span id="dot">.</span></h3>
+                            <img src="" id="img-output">
+                            <h1 id="output-msg-title">Nenhuma mensagem encontrada.</h1>
+                            <h3 id="output-msg">Digite um texto que você deseja criptografar ou descriptografar.</h3>
                         </div>
                     </section>
 

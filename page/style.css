@@ -1,27 +1,36 @@
 body[data-theme="light"]{
     --color-1:white;
     --color-2: #0A3871;
-    --color-3: black;
-    --font: 
+    --color-3: #343A40;
+    --color-background: #EFF1FA;
+    --color-button: #D8DFE8;
+    --color-shadow: #D8DFE8;
+    --font: 'Inter', sans-serif;
+    --image-msg: url("../images/msg-light.svg");
+    --image-warning: url("../images/warning-light.png");
+    --image-logo: url("../images/logo-light.png");
 }
 
 body[data-theme="dark"]{
     --color-1:black;
     --color-2: lime;
     --color-3: white;
-    --font: font-family: 'Orbitron', sans-serif;
+    --color-background: black;
+    --color-button: black;
+    --color-shadow: lime;
+    --font: 'Orbitron', sans-serif;
+    --image-msg: url("../images/msg-dark.gif");
+    --image-warning: url("../images/warning-dark.png");
+    --image-logo: url("../images/logo-dark.svg");
 }
 
 
-/* CSS do Header */
-
-* {
-    font-family: 'Orbitron', sans-serif;
-}
-
-.vector-a {
+.img-logo {
     margin: -30px 0px 0px 40px;
     float: left;
+    content:var(--image-logo);
+    width: 100px;
+    height: 60px;
 }
 
 nav {
@@ -41,32 +50,26 @@ nav li button {
     cursor: pointer;
 }
 
-#light-mode {
-    color: #E5E5E5;
-}
-
-#dark-mode {
-    color: lime;
+#switch-mode {
+    color: var(--color-2);
+    font-family: var(--font);
+    font-size: 16px;
 }
 
 /* CSS da página */
 
 body {
-    background: black;
-    color: white;
+    background: var(--color-background);
+    color: var(--color-2);
+    font-family: var(--font);
 }
 
 #page {
     display: flex;
     flex-flow:row;
     align-items: center;
-    margin: 80px 100px 0 100px;
+    margin: 80px 100px 80px 100px;
 }
-
-#dot {
-    color: lime;
-}
-
 
 #input-box {
     display: inline-block;
@@ -74,10 +77,13 @@ body {
 }
 
 #text {
+    font-family: var(--font);
+    background-color: var(--color-background);
+    color: var(--color-2);
     font-size: 32px;
     border: none;
     resize: none;
-    width: 65vw;
+    width: 55vw;
     height: 50vh;
     margin-top: 80px;
 }
@@ -86,16 +92,6 @@ body {
     box-shadow: 0 0 0 0;
     border: none;
     outline: 0;
-}
-
-.text-light {
-    background-color: white;
-    color: #0A3871;
-}
-
-.text-dark {
-    background-color: black;
-    color: lime;
 }
 
 #warning {
@@ -107,6 +103,7 @@ body {
 
 #warning-img {
     height: 15px;
+    content: var(--image-warning);
 }
 
 #warning-msg {
@@ -115,6 +112,7 @@ body {
     display: flex;
     align-items: center;
     flex-flow: row;
+    color: var(--color-3);
 }
 
 .buttons {
@@ -123,6 +121,7 @@ body {
 }
 
 #cript, #uncript {
+    font-family: var(--font);
     width: 48%;
     height: 50px;
     font-size: 18px;
@@ -131,25 +130,30 @@ body {
 }
 
 #cript {
-    background-color: lime;
-    border: 2px solid lime;
+    background-color: var(--color-2);
+    border: 1px solid var(--color-2);
+    color: var(--color-1);
 }
 
 #uncript {
-    background-color: black;
-    border: 2px solid lime;
-    color: white;
+    background-color: var(--color-button);
+    color: var(--color-2);
+    border: 1px solid var(--color-2);
+
 }
 
 #output-box {
     border: 1px solid white;
-    border-radius: 20px;
-    box-shadow: 2px 2px 15px lime;
-    height: 75vh;
-    padding: 15px 15px 15px 15px;
+    background-color: var(--color-1);
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px var(--color-shadow);
+    height: 70vh;
+    padding: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
     font-size: 10px;
+    color: var(--color-3);
 }
 
 #output-msg-default {
@@ -162,6 +166,7 @@ body {
     font-size: 24px;
     text-align: center;
     margin-bottom: 15px;
+    font-weight: bold;
 }
 #output-msg {
     font-size: 14px;
@@ -170,6 +175,8 @@ body {
 
 #img-output {
     width: 200px;
+    content:var(--image-msg);
+    
 }
 
 #output-done {
@@ -203,9 +210,9 @@ body {
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: black;
-    border: 2px solid lime;
-    color: white;
+    background-color: var(--color-1);
+    border: 1px solid var(--color-2);
+    color: var(--color-2);
 
 }
 

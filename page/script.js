@@ -9,8 +9,7 @@ const displayCodedMessage = document.querySelector("#output-done");
 const codedMessage = document.querySelector("#coded-message");
 const buttonCodedMessage = document.querySelector("#button-coded-message");
 
-const lightMode = document.querySelector("#light-mode");
-const darkMode = document.querySelector("#dark-mode");
+const switchMode = document.querySelector("#switch-mode");
 
 function criptKeys(text) {
     var message = "";
@@ -74,16 +73,39 @@ function clearDisplay() {
 
 buttonCript.addEventListener("click", (event) => {
     event.preventDefault();
-    //Fazer o método de mudar o display
-    //Fazer o método de mudar letra por letra
-    criptKeys(inputMessage.value);
+    if(inputMessage.value != "") {
+        criptKeys(inputMessage.value);
+    } else {
+        clearDisplay();
+        displayDefault.style.display = "flex";
+        displayReset.style.alignItems = "center";
+        displayCodedMessage.style.display = "none";
+    }
 })
 
 buttonUncript.addEventListener("click", (event) => {
     event.preventDefault();
-    //Fazer o método de mudar o display
-    //Fazer o método de mudar letra por letra
-    uncriptKeys(inputMessage.value);
+    if(inputMessage.value != ""){
+        uncriptKeys(inputMessage.value);
+    } else {
+        clearDisplay();
+        displayDefault.style.display = "flex";
+        displayReset.style.alignItems = "center";
+        displayCodedMessage.style.display = "none";
+    }
 })
 
+
+switchMode.addEventListener("click", (event) => {
+    var attributeTheme = document.body.getAttribute("data-theme");
+        if(attributeTheme == "light") {
+            document.body.setAttribute("data-theme", "dark");
+            switchMode.innerHTML = "";
+            switchMode.innerHTML = "Tema Nuvem"
+        } else if (attributeTheme == "dark") {
+            document.body.setAttribute("data-theme", "light");
+            switchMode.innerHTML = "";
+            switchMode.innerHTML = "Tema Hacker"
+        }
+})
 
