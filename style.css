@@ -6,10 +6,10 @@ body[data-theme="light"]{
     --color-button: #D8DFE8;
     --color-shadow: #D8DFE8;
     --font: 'Inter', sans-serif;
-    --image-msg: url("../images/msg-light.svg");
-    --image-warning: url("../images/warning-light.png");
-    --image-logo: url("../images/logo-light.svg");
-    --image-bulb: url("../images/bulb-dark.jpg");
+    --image-msg: url("/images/msg-light.svg");
+    --image-warning: url("/images/warning-light.png");
+    --image-logo: url("/images/logo-light.svg");
+    --image-bulb: url("/images/bulb-dark.jpg");
 }
 
 body[data-theme="dark"]{
@@ -20,10 +20,10 @@ body[data-theme="dark"]{
     --color-button: black;
     --color-shadow: lime;
     --font: 'Orbitron', sans-serif;
-    --image-msg: url("../images/msg-dark.gif");
-    --image-warning: url("../images/warning-dark.png");
-    --image-logo: url("../images/logo-dark.svg");
-    --image-bulb: url("../images/bulb-light.jpg");
+    --image-msg: url("/images/msg-dark.gif");
+    --image-warning: url("/images/warning-dark.png");
+    --image-logo: url("/images/logo-dark.svg");
+    --image-bulb: url("/images/bulb-light.jpg");
 }
 
 
